@@ -13,8 +13,8 @@ from torch.optim import Adam
 from fastNLP import AccuracyMetric, ClassifyFPreRecMetric, ConfusionMatrixMetric
 from fastNLP import Tester
 from fastNLP.io.model_io import ModelSaver
-from fastNLP.modules import VarGRU, MLP
 import pickle as pkl
+from models import GRU
 
 """
 模型训练
@@ -22,14 +22,14 @@ import pickle as pkl
 """
 df = pd.read_csv("dataset/processed.csv")
 # 设置最大字符数
-max_len = 410
-# 处理content字段
-def process_content(sentence):
-    sentence = str(sentence).strip()
-    if len(sentence) >= max_len:
-        sentence = sentence[0: max_len]
-    return sentence
-df['content'] = df['content'].apply(process_content)
+# max_len = 410
+# # 处理content字段
+# def process_content(sentence):
+#     sentence = str(sentence).strip()
+#     if len(sentence) >= max_len:
+#         sentence = sentence[0: max_len]
+#     return sentence
+# df['content'] = df['content'].apply(process_content)
 # 再次过滤内容为空的数据
 df = df[df['content'] != '']
 # 构造fastnlp数据格式
@@ -70,27 +70,7 @@ class BiGRUMaxPoolCls(nn.Module):
     def __init__(self, embed, num_classes, hidden_size=400, num_layers=1, dropout=0.3):
         super().__init__()
         self.embed = embed
-        self.rnn = VarGRU(self.embed.embedding_dim, hidden_size=hidden_size//2, num_layers=num_layers,
-                         batch_first=True, bidirectional=True)
-        self.dropout_layer = nn.Dropout(dropout)
-        self.fc = nn.Linear(hidden_size, num_classes)
-
-    def forward(self, words, seq_len):  # 这里的名称必须和DataSet中相应的field对应，比如之前我们DataSet中有chars，这里就必须为chars
-        # chars:[batch_size, max_len]
-        # seq_len: [batch_size, ]
-        words = self.embed(words)
-        outputs, _ = self.rnn(words, seq_len)
-        outputs = self.dropout_layer(outputs)
-        outputs, _ = torch.max(outputs, dim=1)
-        outputs = self.fc(outputs)
-
-        return {'pred':outputs}  # [batch_size,], 返回值必须是dict类型，且预测值的key建议设为pred
-
-class BiLSTMMaxPoolCls(nn.Module):
-    def __init__(self, embed, num_classes, hidden_size=400, num_layers=1, dropout=0.3):
-        super().__init__()
-        self.embed = embed
-        self.rnn = LSTM(self.embed.embedding_dim, hidden_size=hidden_size//2, num_layers=num_layers,
+        self.rnn = GRU(self.embed.embedding_dim, hidden_size=hidden_size//2, num_layers=num_layers,
                          batch_first=True, bidirectional=True)
         self.dropout_layer = nn.Dropout(dropout)
         self.fc = nn.Linear(hidden_size, num_classes)
@@ -111,8 +91,7 @@ char_vocab = data_bundle.get_vocab('words')
 # 加载Bert
 bert_embed = BertEmbedding(char_vocab, model_dir_or_name='en', auto_truncate=True, requires_grad=True)
 # 定义模型
-# model = BiGRUMaxPoolCls(bert_embed, len(data_bundle.get_vocab('target')))
-model = BiLSTMMaxPoolCls(bert_embed, len(data_bundle.get_vocab('target')))
+model = BiGRUMaxPoolCls(bert_embed, len(data_bundle.get_vocab('target')))
 # 定义损失函数
 loss = CrossEntropyLoss()
 # 定义优化器
@@ -123,7 +102,7 @@ metric = AccuracyMetric()
 device = 0 if torch.cuda.is_available() else 'cpu'  # 如果有gpu的话在gpu上运行，训练速度会更快
 
 # 定义trainer
-batch_size = 16
+batch_size = 32
 n_epochs = 2
 trainer = Trainer(train_data=data_bundle.get_dataset('train'), model=model, loss=loss,
                   optimizer=optimizer, batch_size=batch_size, dev_data=data_bundle.get_dataset('valid'),
