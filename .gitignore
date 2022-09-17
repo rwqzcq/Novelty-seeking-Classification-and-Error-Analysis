@@ -132,3 +132,4 @@ dmypy.json
 dataset/*
 save_models/*
 dataset/processed.csv
+*.png

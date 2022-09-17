@@ -86,7 +86,6 @@ class BiGRUMaxPoolCls(nn.Module):
 
         return {'pred':outputs}  # [batch_size,], 返回值必须是dict类型，且预测值的key建议设为pred
 
-
 char_vocab = data_bundle.get_vocab('words')
 # 加载Bert
 bert_embed = BertEmbedding(char_vocab, model_dir_or_name='en', auto_truncate=True, requires_grad=True)
@@ -98,22 +97,23 @@ loss = CrossEntropyLoss()
 optimizer = Adam(model.parameters(), lr=2e-5)
 # 定义评价指标
 metric = AccuracyMetric()
+cls_report_metric = ClassifyFPreRecMetric(only_gross=False)
+cls_confusion_metric = ConfusionMatrixMetric()
 # 定义设备
 device = 0 if torch.cuda.is_available() else 'cpu'  # 如果有gpu的话在gpu上运行，训练速度会更快
 
 # 定义trainer
-batch_size = 32
-n_epochs = 2
+batch_size = 8
+n_epochs = 20
 trainer = Trainer(train_data=data_bundle.get_dataset('train'), model=model, loss=loss,
                   optimizer=optimizer, batch_size=batch_size, dev_data=data_bundle.get_dataset('valid'),
-                  metrics=metric, device=device, n_epochs=n_epochs)
+                  metrics=[cls_report_metric], device=device, n_epochs=n_epochs)
 # 开始训练，训练完成之后默认会加载在dev上表现最好的模型
 trainer.train()
 
 # 测试模型
 print("Performance on test is:")
-cls_report_metric = ClassifyFPreRecMetric()
-cls_confusion_metric = ConfusionMatrixMetric()
+
 tester = Tester(data=data_bundle.get_dataset('test'), model=model, metrics=[cls_report_metric, cls_confusion_metric], batch_size=batch_size, device=device)
 tester.test()
 
