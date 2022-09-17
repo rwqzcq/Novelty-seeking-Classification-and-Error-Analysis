@@ -4,3 +4,4 @@ fastnlp
 torch
 openpyxl
 sklearn
+spacy==3.4.1
