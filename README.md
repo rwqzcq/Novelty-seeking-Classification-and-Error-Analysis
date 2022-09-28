@@ -1,6 +1,18 @@
 # SentimentClassificationErrorAnalyse
 Sentiment Classification Error Analyse
 
+# 安装说明
+
+```shell
+pip install -r requirements.txt
+pip install en_core_web_sm-3.4.0-py3-none-any.whl
+```
+# 运行说明
+
+```shell
+nohup python -u 2_train.py > gru.log &
+```
+
 # 误差分析
 
 偏差(bias)与方差(variance)
@@ -23,6 +35,7 @@ target    0       1     all
 ```
 
 # 参考链接
+
 1. 分类问题（六）误差分析. https://www.cnblogs.com/zackstang/p/12332109.html
 2. 使用scikit-learn中的metrics.plot_confusion_matrix混淆矩阵函数分析分类器的误差来源. https://blog.csdn.net/cxx654/article/details/107296343/
 3. AI学习笔记——机器学习中误差分析的几个关键概念. https://www.pianshen.com/article/2957376531/

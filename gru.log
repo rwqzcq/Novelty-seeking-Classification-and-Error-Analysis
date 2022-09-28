@@ -1,0 +1,217 @@
+(base) ➜  SentimentClassificationErrorAnalyse python 2_train.py 
+2022-09-17 21:07:42.544988: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:939] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-17 21:07:42.551423: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:939] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-17 21:07:42.551693: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:939] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+loading vocabulary file /home/featurize/.fastNLP/embedding/bert-base-cased/vocab.txt
+Load pre-trained BERT parameters from file /home/featurize/.fastNLP/embedding/bert-base-cased/pytorch_model.bin.
+Bert Model will return 1 layers (layer-0 is embedding result): [-1]
+input fields after batch(if batch size is 2):
+        words: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2, 32]) 
+        seq_len: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2]) 
+target fields after batch(if batch size is 2):
+        target: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2]) 
+
+training epochs started 2022-09-17-21-07-52-838812
+Evaluate data in 1.72 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 1/20. Step:400/8000:                                                                                                                                                                        
+ClassifyFPreRecMetric: f=0.8975, pre=0.8975, rec=0.8975                                                                                                                                                                
+
+Evaluate data in 1.73 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 2/20. Step:800/8000:                                                                                                                                                                        
+ClassifyFPreRecMetric: f=0.955, pre=0.955, rec=0.955                                                                                                                                                                   
+
+Evaluate data in 1.71 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 3/20. Step:1200/8000:                                                                                                                                                                       
+ClassifyFPreRecMetric: f=0.94, pre=0.94, rec=0.94                                                                                                                                                                      
+
+Evaluate data in 1.74 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 4/20. Step:1600/8000:                                                                                                                                                                       
+ClassifyFPreRecMetric: f=0.96, pre=0.96, rec=0.96                                                                                                                                                                      
+
+Evaluate data in 1.74 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 5/20. Step:2000/8000:                                                                                                                                                                       
+ClassifyFPreRecMetric: f=0.9675, pre=0.9675, rec=0.9675                                                                                                                                                                
+
+Evaluate data in 1.78 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 6/20. Step:2400/8000:                                                                                                                                                                       
+ClassifyFPreRecMetric: f=0.965, pre=0.965, rec=0.965                                                                                                                                                                   
+
+Evaluate data in 1.72 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 7/20. Step:2800/8000:                                                                                                                                                                       
+ClassifyFPreRecMetric: f=0.9225, pre=0.9225, rec=0.9225                                                                                                                                                                
+
+Evaluate data in 1.74 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 8/20. Step:3200/8000:                                                                                                                                                                       
+ClassifyFPreRecMetric: f=0.945, pre=0.945, rec=0.945                                                                                                                                                                   
+
+Evaluate data in 1.74 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 9/20. Step:3600/8000:                                                                                                                                                                       
+ClassifyFPreRecMetric: f=0.955, pre=0.955, rec=0.955                                                                                                                                                                   
+
+Evaluate data in 1.76 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 10/20. Step:4000/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.9575, pre=0.9575, rec=0.9575                                                                                                                                                                
+
+Evaluate data in 1.81 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 11/20. Step:4400/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.945, pre=0.945, rec=0.945                                                                                                                                                                   
+
+Evaluate data in 1.72 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 12/20. Step:4800/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.95, pre=0.95, rec=0.95                                                                                                                                                                      
+
+Evaluate data in 1.81 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 13/20. Step:5200/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.9575, pre=0.9575, rec=0.9575                                                                                                                                                                
+
+Evaluate data in 1.71 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 14/20. Step:5600/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.9575, pre=0.9575, rec=0.9575                                                                                                                                                                
+
+Evaluate data in 1.7 seconds!                                                                                                                                                                                          
+Evaluation on dev at Epoch 15/20. Step:6000/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.955, pre=0.955, rec=0.955                                                                                                                                                                   
+
+Evaluate data in 1.83 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 16/20. Step:6400/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.945, pre=0.945, rec=0.945                                                                                                                                                                   
+
+Evaluate data in 1.72 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 17/20. Step:6800/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.955, pre=0.955, rec=0.955                                                                                                                                                                   
+
+Evaluate data in 1.73 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 18/20. Step:7200/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.9525, pre=0.9525, rec=0.9525                                                                                                                                                                
+
+Evaluate data in 1.76 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 19/20. Step:7600/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.965, pre=0.965, rec=0.965                                                                                                                                                                   
+
+Evaluate data in 1.73 seconds!                                                                                                                                                                                         
+Evaluation on dev at Epoch 20/20. Step:8000/8000:                                                                                                                                                                      
+ClassifyFPreRecMetric: f=0.96, pre=0.96, rec=0.96                                                                                                                                                                      
+
+Reloaded the best model.                                                                                                                                                                                               
+
+In Epoch:5/Step:2000, got best dev performance:
+ClassifyFPreRecMetric: f=0.9675, pre=0.9675, rec=0.9675
+Performance on test is:
+Evaluate data in 1.8 seconds!                                                                                                                                                                                          
+[tester] 
+ClassifyFPreRecMetric: f=0.9525, pre=0.9525, rec=0.9525
+ConfusionMatrixMetric: confusion_matrix=
+target    0       1     all
+  pred
+     0  241      13     254
+     1    6     140     146
+   all  247     153     400
+
+
+2022-09-17 22:03:17.314809: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:939] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-17 22:03:17.323284: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:939] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-17 22:03:17.323540: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:939] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+loading vocabulary file /home/featurize/.fastNLP/embedding/bert-base-cased/vocab.txt
+Load pre-trained BERT parameters from file /home/featurize/.fastNLP/embedding/bert-base-cased/pytorch_model.bin.
+Bert Model will return 1 layers (layer-0 is embedding result): [-1]
+input fields after batch(if batch size is 2):
+        words: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2, 32])
+        seq_len: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2])
+target fields after batch(if batch size is 2):
+        target: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2])
+
+training epochs started 2022-09-17-22-03-27-733124
+Evaluate data in 1.69 seconds!
+Evaluation on dev at Epoch 1/20. Step:400/8000:
+ClassifyFPreRecMetric: f-0=0.915572, pre-0=0.853147, rec-0=0.987854, f-1=0.831461, pre-1=0.973684, rec-1=0.72549, f=0.8875, pre=0.8875, rec=0.8875
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 2/20. Step:800/8000:
+ClassifyFPreRecMetric: f-0=0.956175, pre-0=0.941176, rec-0=0.97166, f-1=0.926174, pre-1=0.951724, rec-1=0.901961, f=0.945, pre=0.945, rec=0.945
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 3/20. Step:1200/8000:
+ClassifyFPreRecMetric: f-0=0.942623, pre-0=0.954357, rec-0=0.931174, f-1=0.910256, pre-1=0.893082, rec-1=0.928105, f=0.93, pre=0.93, rec=0.93
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 4/20. Step:1600/8000:
+ClassifyFPreRecMetric: f-0=0.942857, pre-0=0.950617, rec-0=0.935223, f-1=0.909677, pre-1=0.898089, rec-1=0.921569, f=0.93, pre=0.93, rec=0.93
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 5/20. Step:2000/8000:
+ClassifyFPreRecMetric: f-0=0.955823, pre-0=0.948207, rec-0=0.963563, f-1=0.927152, pre-1=0.939597, rec-1=0.915033, f=0.945, pre=0.945, rec=0.945
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 6/20. Step:2400/8000:
+ClassifyFPreRecMetric: f-0=0.94929, pre-0=0.95122, rec-0=0.947368, f-1=0.918567, pre-1=0.915584, rec-1=0.921569, f=0.9375, pre=0.9375, rec=0.9375
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 7/20. Step:2800/8000:
+ClassifyFPreRecMetric: f-0=0.953722, pre-0=0.948, rec-0=0.959514, f-1=0.924092, pre-1=0.933333, rec-1=0.915033, f=0.9425, pre=0.9425, rec=0.9425
+
+Evaluate data in 1.69 seconds!
+Evaluation on dev at Epoch 8/20. Step:3200/8000:
+ClassifyFPreRecMetric: f-0=0.949495, pre-0=0.947581, rec-0=0.951417, f-1=0.918033, pre-1=0.921053, rec-1=0.915033, f=0.9375, pre=0.9375, rec=0.9375
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 9/20. Step:3600/8000:
+ClassifyFPreRecMetric: f-0=0.970414, pre-0=0.946154, rec-0=0.995951, f-1=0.948805, pre-1=0.992857, rec-1=0.908497, f=0.9625, pre=0.9625, rec=0.9625
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 10/20. Step:4000/8000:
+ClassifyFPreRecMetric: f-0=0.957746, pre-0=0.952, rec-0=0.963563, f-1=0.930693, pre-1=0.94, rec-1=0.921569, f=0.9475, pre=0.9475, rec=0.9475
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 11/20. Step:4400/8000:
+ClassifyFPreRecMetric: f-0=0.947154, pre-0=0.95102, rec-0=0.94332, f-1=0.915584, pre-1=0.909677, rec-1=0.921569, f=0.935, pre=0.935, rec=0.935
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 12/20. Step:4800/8000:
+ClassifyFPreRecMetric: f-0=0.953535, pre-0=0.951613, rec-0=0.955466, f-1=0.92459, pre-1=0.927632, rec-1=0.921569, f=0.9425, pre=0.9425, rec=0.9425
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 13/20. Step:5200/8000:
+ClassifyFPreRecMetric: f-0=0.955645, pre-0=0.951807, rec-0=0.959514, f-1=0.927632, pre-1=0.933775, rec-1=0.921569, f=0.945, pre=0.945, rec=0.945
+
+Evaluate data in 1.69 seconds!
+Evaluation on dev at Epoch 14/20. Step:5600/8000:
+ClassifyFPreRecMetric: f-0=0.955645, pre-0=0.951807, rec-0=0.959514, f-1=0.927632, pre-1=0.933775, rec-1=0.921569, f=0.945, pre=0.945, rec=0.945
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 15/20. Step:6000/8000:
+ClassifyFPreRecMetric: f-0=0.886463, pre-0=0.962085, rec-0=0.821862, f-1=0.847953, pre-1=0.767196, rec-1=0.947712, f=0.87, pre=0.87, rec=0.87
+
+Evaluate data in 1.69 seconds!
+Evaluation on dev at Epoch 16/20. Step:6400/8000:
+ClassifyFPreRecMetric: f-0=0.965932, pre-0=0.956349, rec-0=0.975709, f-1=0.943522, pre-1=0.959459, rec-1=0.928105, f=0.9575, pre=0.9575, rec=0.9575
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 17/20. Step:6800/8000:
+ClassifyFPreRecMetric: f-0=0.964143, pre-0=0.94902, rec-0=0.979757, f-1=0.939597, pre-1=0.965517, rec-1=0.915033, f=0.955, pre=0.955, rec=0.955
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 18/20. Step:7200/8000:
+ClassifyFPreRecMetric: f-0=0.961616, pre-0=0.959677, rec-0=0.963563, f-1=0.937705, pre-1=0.940789, rec-1=0.934641, f=0.9525, pre=0.9525, rec=0.9525
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 19/20. Step:7600/8000:
+ClassifyFPreRecMetric: f-0=0.96371, pre-0=0.959839, rec-0=0.967611, f-1=0.940789, pre-1=0.94702, rec-1=0.934641, f=0.955, pre=0.955, rec=0.955
+
+Evaluate data in 1.7 seconds!
+Evaluation on dev at Epoch 20/20. Step:8000/8000:
+ClassifyFPreRecMetric: f-0=0.96371, pre-0=0.959839, rec-0=0.967611, f-1=0.940789, pre-1=0.94702, rec-1=0.934641, f=0.955, pre=0.955, rec=0.955
+
+Reloaded the best model.
+
+In Epoch:9/Step:3600, got best dev performance:
+ClassifyFPreRecMetric: f-0=0.970414, pre-0=0.946154, rec-0=0.995951, f-1=0.948805, pre-1=0.992857, rec-1=0.908497, f=0.9625, pre=0.9625, rec=0.9625
+Performance on test is:
+Evaluate data in 1.76 seconds!
+[tester]
+ClassifyFPreRecMetric: f-0=0.966601, pre-0=0.938931, rec-0=0.995951, f-1=0.941581, pre-1=0.992754, rec-1=0.895425, f=0.9575, pre=0.9575, rec=0.9575
+ConfusionMatrixMetric: confusion_matrix=
+target    0       1     all
+  pred
+     0  246      16     262
+     1    1     137     138
+   all  247     153     400

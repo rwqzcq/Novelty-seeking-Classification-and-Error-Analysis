@@ -96,8 +96,8 @@ loss = CrossEntropyLoss()
 # 定义优化器
 optimizer = Adam(model.parameters(), lr=2e-5)
 # 定义评价指标
-metric = AccuracyMetric()
-cls_report_metric = ClassifyFPreRecMetric(only_gross=False)
+acc_metric = AccuracyMetric()
+cls_report_metric = ClassifyFPreRecMetric(only_gross=False, f_type="macro")
 cls_confusion_metric = ConfusionMatrixMetric()
 # 定义设备
 device = 0 if torch.cuda.is_available() else 'cpu'  # 如果有gpu的话在gpu上运行，训练速度会更快
@@ -114,7 +114,7 @@ trainer.train()
 # 测试模型
 print("Performance on test is:")
 
-tester = Tester(data=data_bundle.get_dataset('test'), model=model, metrics=[cls_report_metric, cls_confusion_metric], batch_size=batch_size, device=device)
+tester = Tester(data=data_bundle.get_dataset('test'), model=model, metrics=[acc_metric, cls_report_metric, cls_confusion_metric], batch_size=batch_size, device=device)
 tester.test()
 
 # 保存模型
