@@ -25,13 +25,14 @@ TODO 比较DEV与TEST中的accuracy，参考[这里](https://www.pianshen.com/ar
 
 ```text
 [tester] 
-ClassifyFPreRecMetric: f=0.9525, pre=0.9525, rec=0.9525
+AccuracyMetric: acc=0.9575
+ClassifyFPreRecMetric: f-0=0.966601, pre-0=0.938931, rec-0=0.995951, f-1=0.941581, pre-1=0.992754, rec-1=0.895425, f=0.954091, pre=0.965842, rec=0.945688
 ConfusionMatrixMetric: confusion_matrix=
-target    0       1     all
-  pred
-     0  241      13     254
-     1    6     140     146
-   all  247     153     400
+target	  0	  1	all	
+  pred	
+     0	246	 16	262	
+     1	  1	137	138	
+   all	247	153	400	
 ```
 
 # 参考链接

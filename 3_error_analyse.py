@@ -7,7 +7,7 @@ import numpy as np
 误差分析：
     1. 绘制混淆矩阵
 """
-cm_data = np.array([[241, 13], [6, 140]])
+cm_data = np.array([[246, 16], [1, 137]])
 norm_cm_data = cm_data / cm_data.sum(axis=1, keepdims=True)
 np.fill_diagonal(norm_cm_data, 0)
 cm_df = pd.DataFrame(cm_data, index=["Negative", "Positive"],columns=["Negative", "Positive"])
