@@ -20,7 +20,7 @@ from models import GRU
 模型训练
 参考：https://rwqzcq.github.io/2022/01/04/nlp/fastnlp/
 """
-df = pd.read_csv("dataset/processed.csv")
+df = pd.read_csv("dataset/processed0929.csv")
 # 设置最大字符数
 # max_len = 410
 # # 处理content字段
