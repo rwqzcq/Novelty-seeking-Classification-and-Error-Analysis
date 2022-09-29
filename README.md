@@ -35,6 +35,29 @@ target	  0	  1	all
    all	247	153	400	
 ```
 
+# 硬件配置
+
+| 配置项 | 配置值 |
+| --- | ----------- |
+| Operation System | Linux |
+| Processor | Intel Xeon Gold 6142 |
+| RAM | 60.9G |
+| GPU | NVIDIA GeForce RTX 3090 25.4G | 
+| Program Language | Python3.7 | 
+| Deep Learning Framework | Pytorch
+
+# 参数配置
+| 配置项 | 配置值 |
+| --- | ------------ | 
+| bert model | bert-base-uncased | 
+| optimizer | adam | 
+| loss function | cross-entropy loss | 
+| batch_size | 8 | 
+| learning rate | 0.0001 | 
+| dropout rate | 0.5 | 
+| epoch | 20 | 
+| layers | 2 | 
+
 # 参考链接
 
 1. 分类问题（六）误差分析. https://www.cnblogs.com/zackstang/p/12332109.html

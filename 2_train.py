@@ -90,7 +90,7 @@ char_vocab = data_bundle.get_vocab('words')
 # 加载Bert
 bert_embed = BertEmbedding(char_vocab, model_dir_or_name='en', auto_truncate=True, requires_grad=True)
 # 定义模型
-model = BiGRUMaxPoolCls(bert_embed, len(data_bundle.get_vocab('target')))
+model = BiGRUMaxPoolCls(bert_embed, len(data_bundle.get_vocab('target')), dropout=0.5, num_classes=2)
 # 定义损失函数
 loss = CrossEntropyLoss()
 # 定义优化器
