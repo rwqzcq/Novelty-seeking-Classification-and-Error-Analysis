@@ -1,0 +1,204 @@
+training epochs started 2022-10-03-19-34-20-154171
+Evaluate data in 9.43 seconds!                                                                                                                                
+Evaluation on dev at Epoch 1/2. Step:724/1448:                                                                                                                
+ClassifyFPreRecMetric: f-0=0.993842, pre-0=0.98776, rec-0=1.0, f-1=0.992138, pre-1=1.0, rec-1=0.984399, f=0.99299, pre=0.99388, rec=0.9922                    
+
+Evaluate data in 9.4 seconds!                                                                                                                                 
+Evaluation on dev at Epoch 2/2. Step:1448/1448:                                                                                                               
+ClassifyFPreRecMetric: f-0=0.996898, pre-0=0.998137, rec-0=0.995663, f-1=0.996106, pre-1=0.994557, rec-1=0.99766, f=0.996502, pre=0.996347, rec=0.996661      
+
+Reloaded the best model.                                                                                                                                      
+
+In Epoch:2/Step:1448, got best dev performance:
+ClassifyFPreRecMetric: f-0=0.996898, pre-0=0.998137, rec-0=0.995663, f-1=0.996106, pre-1=0.994557, rec-1=0.99766, f=0.996502, pre=0.996347, rec=0.996661
+Performance on test is:
+Evaluate data in 9.77 seconds!                                                                                                                                
+[tester] 
+AccuracyMetric: acc=0.997238
+ClassifyFPreRecMetric: f-0=0.997557, pre-0=1.0, rec-0=0.995125, f-1=0.996823, pre-1=0.993666, rec-1=1.0, f=0.99719, pre=0.996833, rec=0.997562
+ConfusionMatrixMetric: confusion_matrix=
+target	   0	   1	 all	
+  pred	
+     0	1633	   0	1633	
+     1	   8	1255	1263	
+   all	1641	1255	2896
+
+training epochs started 2022-10-03-20-05-40-502445
+Evaluate data in 10.73 seconds!                                                                                                                               
+Evaluation on dev at Epoch 1/2. Step:724/1448:                                                                                                                
+ClassifyFPreRecMetric: f-0=0.980562, pre-0=0.961864, rec-0=1.0, f-1=0.975304, pre-1=1.0, rec-1=0.951798, f=0.977933, pre=0.980932, rec=0.975899               
+
+Evaluate data in 10.72 seconds!                                                                                                                               
+Evaluation on dev at Epoch 2/2. Step:1448/1448:                                                                                                               
+ClassifyFPreRecMetric: f-0=0.988799, pre-0=0.977846, rec-0=1.0, f-1=0.986036, pre-1=1.0, rec-1=0.972456, f=0.987417, pre=0.988923, rec=0.986228               
+
+Reloaded the best model.                                                                                                                                      
+
+In Epoch:2/Step:1448, got best dev performance:
+ClassifyFPreRecMetric: f-0=0.988799, pre-0=0.977846, rec-0=1.0, f-1=0.986036, pre-1=1.0, rec-1=0.972456, f=0.987417, pre=0.988923, rec=0.986228
+Performance on test is:
+Evaluate data in 10.29 seconds!                                                                                                                               
+[tester] 
+AccuracyMetric: acc=0.990331
+ClassifyFPreRecMetric: f-0=0.991416, pre-0=0.983577, rec-0=0.999382, f-1=0.988933, pre-1=0.999201, rec-1=0.978873, f=0.990175, pre=0.991389, rec=0.989128
+ConfusionMatrixMetric: confusion_matrix=
+target	   0	   1	 all	
+  pred	
+     0	1617	  27	1644	
+     1	   1	1251	1252	
+   all	1618	1278	2896
+  
+  
+  Evaluate data in 10.15 seconds!                                                                                                                               
+Evaluation on dev at Epoch 1/2. Step:724/1448:                                                                                                                
+ClassifyFPreRecMetric: f-0=0.732018, pre-0=0.713609, rec-0=0.751402, f-1=0.646376, pre-1=0.669154, rec-1=0.625097, f=0.689197, pre=0.691382, rec=0.688249     
+
+Evaluate data in 10.1 seconds!                                                                                                                                
+Evaluation on dev at Epoch 2/2. Step:1448/1448:                                                                                                               
+ClassifyFPreRecMetric: f-0=0.726533, pre-0=0.72973, rec-0=0.723364, f-1=0.663328, pre-1=0.65977, rec-1=0.666925, f=0.694931, pre=0.69475, rec=0.695145        
+
+Reloaded the best model.                                                                                                                                      
+
+In Epoch:1/Step:724, got best dev performance:
+ClassifyFPreRecMetric: f-0=0.732018, pre-0=0.713609, rec-0=0.751402, f-1=0.646376, pre-1=0.669154, rec-1=0.625097, f=0.689197, pre=0.691382, rec=0.688249
+Performance on test is:
+Evaluate data in 9.38 seconds!                                                                                                                                
+[tester] 
+AccuracyMetric: acc=0.977555
+ClassifyFPreRecMetric: f-0=0.980521, pre-0=0.961787, rec-0=1.0, f-1=0.973523, pre-1=1.0, rec-1=0.948413, f=0.977022, pre=0.980894, rec=0.974206
+ConfusionMatrixMetric: confusion_matrix=
+target	   0	   1	 all	
+  pred	
+     0	1636	  65	1701	
+     1	   0	1195	1195	
+   all	1636	1260	2896
+ 
+ 
+training epochs started 2022-10-03-20-32-10-601346
+Evaluate data in 10.56 seconds!                                                                                                                               
+Evaluation on dev at Epoch 1/2. Step:724/1448:                                                                                                                
+ClassifyFPreRecMetric: f-0=0.843778, pre-0=0.826189, rec-0=0.862132, f-1=0.787953, pre-1=0.8114, rec-1=0.765823, f=0.815865, pre=0.818794, rec=0.813978       
+
+Evaluate data in 10.55 seconds!                                                                                                                               
+Evaluation on dev at Epoch 2/2. Step:1448/1448:                                                                                                               
+ClassifyFPreRecMetric: f-0=0.850442, pre-0=0.845548, rec-0=0.855392, f-1=0.804305, pre-1=0.810442, rec-1=0.798259, f=0.827373, pre=0.827995, rec=0.826826     
+
+Reloaded the best model.                                                                                                                                      
+
+In Epoch:2/Step:1448, got best dev performance:
+ClassifyFPreRecMetric: f-0=0.850442, pre-0=0.845548, rec-0=0.855392, f-1=0.804305, pre-1=0.810442, rec-1=0.798259, f=0.827373, pre=0.827995, rec=0.826826
+Performance on test is:
+Evaluate data in 10.26 seconds!                                                                                                                               
+[tester] 
+AccuracyMetric: acc=0.828729
+ClassifyFPreRecMetric: f-0=0.844514, pre-0=0.837687, rec-0=0.851454, f-1=0.809377, pre-1=0.817547, rec-1=0.80137, f=0.826946, pre=0.827617, rec=0.826412
+ConfusionMatrixMetric: confusion_matrix=
+target	   0	   1	 all	
+  pred	
+     0	1347	 261	1608	
+     1	 235	1053	1288	
+   all	1582	1314	2896
+
+
+training epochs started 2022-10-03-20-41-51-513686
+Evaluate data in 10.01 seconds!                                                                                                                               
+Evaluation on dev at Epoch 1/2. Step:724/1448:                                                                                                                
+ClassifyFPreRecMetric: f-0=0.829708, pre-0=0.816514, rec-0=0.843335, f-1=0.787102, pre-1=0.803331, rec-1=0.771516, f=0.808405, pre=0.809922, rec=0.807426     
+
+Evaluate data in 10.0 seconds!                                                                                                                                
+Evaluation on dev at Epoch 2/2. Step:1448/1448:                                                                                                               
+ClassifyFPreRecMetric: f-0=0.83229, pre-0=0.824551, rec-0=0.840177, f-1=0.793529, pre-1=0.802806, rec-1=0.784463, f=0.812909, pre=0.813678, rec=0.81232       
+
+Reloaded the best model.                                                                                                                                      
+
+In Epoch:2/Step:1448, got best dev performance:
+ClassifyFPreRecMetric: f-0=0.83229, pre-0=0.824551, rec-0=0.840177, f-1=0.793529, pre-1=0.802806, rec-1=0.784463, f=0.812909, pre=0.813678, rec=0.81232
+Performance on test is:
+Evaluate data in 10.28 seconds!                                                                                                                               
+[tester] 
+AccuracyMetric: acc=0.898826
+ClassifyFPreRecMetric: f-0=0.909204, pre-0=0.900552, rec-0=0.918023, f-1=0.88577, pre-1=0.896606, rec-1=0.875193, f=0.897487, pre=0.898579, rec=0.896608
+ConfusionMatrixMetric: confusion_matrix=
+target	   0	   1	 all	
+  pred	
+     0	1467	 162	1629	
+     1	 131	1136	1267	
+   all	1598	1298	2896
+
+
+training epochs started 2022-10-03-20-51-37-121808
+Evaluate data in 10.36 seconds!                                                                                                                               
+Evaluation on dev at Epoch 1/2. Step:724/1448:                                                                                                                
+ClassifyFPreRecMetric: f-0=0.91144, pre-0=0.904881, rec-0=0.918095, f-1=0.892707, pre-1=0.900616, rec-1=0.884936, f=0.902074, pre=0.902749, rec=0.901515      
+
+Evaluate data in 10.37 seconds!                                                                                                                               
+Evaluation on dev at Epoch 2/2. Step:1448/1448:                                                                                                               
+ClassifyFPreRecMetric: f-0=0.909665, pre-0=0.905091, rec-0=0.914286, f-1=0.891089, pre-1=0.896552, rec-1=0.885693, f=0.900377, pre=0.900821, rec=0.899989     
+
+Reloaded the best model.                                                                                                                                      
+
+In Epoch:1/Step:724, got best dev performance:
+ClassifyFPreRecMetric: f-0=0.91144, pre-0=0.904881, rec-0=0.918095, f-1=0.892707, pre-1=0.900616, rec-1=0.884936, f=0.902074, pre=0.902749, rec=0.901515
+Performance on test is:
+Evaluate data in 10.57 seconds!                                                                                                                               
+[tester] 
+AccuracyMetric: acc=0.899517
+ClassifyFPreRecMetric: f-0=0.911845, pre-0=0.902278, rec-0=0.921617, f-1=0.883179, pre-1=0.895765, rec-1=0.870942, f=0.897512, pre=0.899022, rec=0.896279
+ConfusionMatrixMetric: confusion_matrix=
+target	   0	   1	 all	
+  pred	
+     0	1505	 163	1668	
+     1	 128	1100	1228	
+   all	1633	1263	2896
+
+
+training epochs started 2022-10-03-21-02-10-350606
+Evaluate data in 10.31 seconds!                                                                                                                               
+Evaluation on dev at Epoch 1/2. Step:724/1448:                                                                                                                
+ClassifyFPreRecMetric: f-0=0.910921, pre-0=0.903753, rec-0=0.918204, f-1=0.88385, pre-1=0.893087, rec-1=0.874803, f=0.897386, pre=0.89842, rec=0.896504       
+
+Evaluate data in 10.28 seconds!                                                                                                                               
+Evaluation on dev at Epoch 2/2. Step:1448/1448:                                                                                                               
+ClassifyFPreRecMetric: f-0=0.912313, pre-0=0.906497, rec-0=0.918204, f-1=0.886066, pre-1=0.893515, rec-1=0.87874, f=0.899189, pre=0.900006, rec=0.898472      
+
+Reloaded the best model.                                                                                                                                      
+
+In Epoch:2/Step:1448, got best dev performance:
+ClassifyFPreRecMetric: f-0=0.912313, pre-0=0.906497, rec-0=0.918204, f-1=0.886066, pre-1=0.893515, rec-1=0.87874, f=0.899189, pre=0.900006, rec=0.898472
+Performance on test is:
+Evaluate data in 10.11 seconds!                                                                                                                               
+[tester] 
+AccuracyMetric: acc=0.991022
+ClassifyFPreRecMetric: f-0=0.992044, pre-0=0.98541, rec-0=0.998768, f-1=0.989699, pre-1=0.998401, rec-1=0.981147, f=0.990871, pre=0.991906, rec=0.989957
+ConfusionMatrixMetric: confusion_matrix=
+target	   0	   1	 all	
+  pred	
+     0	1621	  24	1645	
+     1	   2	1249	1251	
+   all	1623	1273	2896
+
+
+training epochs started 2022-10-03-21-11-44-640889
+Evaluate data in 9.47 seconds!                                                                                                                                
+Evaluation on dev at Epoch 1/2. Step:724/1448:                                                                                                                
+ClassifyFPreRecMetric: f-0=0.913111, pre-0=0.905497, rec-0=0.920854, f-1=0.891902, pre-1=0.901331, rec-1=0.882669, f=0.902507, pre=0.903414, rec=0.901761     
+
+Evaluate data in 9.54 seconds!                                                                                                                                
+Evaluation on dev at Epoch 2/2. Step:1448/1448:                                                                                                               
+ClassifyFPreRecMetric: f-0=0.911424, pre-0=0.908297, rec-0=0.914573, f-1=0.891028, pre-1=0.894818, rec-1=0.88727, f=0.901226, pre=0.901558, rec=0.900921      
+
+Reloaded the best model.                                                                                                                                      
+
+In Epoch:1/Step:724, got best dev performance:
+ClassifyFPreRecMetric: f-0=0.913111, pre-0=0.905497, rec-0=0.920854, f-1=0.891902, pre-1=0.901331, rec-1=0.882669, f=0.902507, pre=0.903414, rec=0.901761
+Performance on test is:
+Evaluate data in 9.4 seconds!                                                                                                                                 
+[tester] 
+AccuracyMetric: acc=0.933702
+ClassifyFPreRecMetric: f-0=0.94114, pre-0=0.933131, rec-0=0.949289, f-1=0.924111, pre-1=0.934452, rec-1=0.913995, f=0.932626, pre=0.933792, rec=0.931642
+ConfusionMatrixMetric: confusion_matrix=
+target	   0	   1	 all	
+  pred	
+     0	1535	 110	1645	
+     1	  82	1169	1251	
+   all	1617	1279	2896
